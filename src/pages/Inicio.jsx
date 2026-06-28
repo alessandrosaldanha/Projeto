@@ -146,7 +146,12 @@ export default function Inicio() {
                     <br />
                     Maragogi — AL · CEP 57955-000
                   </p>
-                  <a className="info-link" href="https://maps.google.com">
+                  <a
+                    className="info-link"
+                    href="https://maps.app.goo.gl/hwNn79DzdxtDH4Jo6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Abrir no Google Maps{" "}
                     <i className="ti ti-external-link" aria-hidden="true" />
                   </a>
@@ -177,11 +182,16 @@ export default function Inicio() {
             </div>
           </div>
           <div className="map-ph">
-            <div className="grid-overlay" />
-            <div className="map-label">
-              <i className="ti ti-map-pin-filled" aria-hidden="true" />
-              <div>Mapa · Av. Beira Mar, Maragogi/AL</div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.28434729880718!2d-35.22393158838092!3d-9.013528342542818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x700f5513da32d4b%3A0x245633c593f0bc41!2sIgreja%20Batista%20Reformada%20de%20Maragogi!5e0!3m2!1spt-BR!2sbr!4v1782660207631!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0, position: 'absolute', inset: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Igreja Batista Reformada de Maragogi"
+            />
           </div>
         </div>
       </section>

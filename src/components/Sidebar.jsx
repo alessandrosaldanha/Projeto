@@ -13,9 +13,7 @@ export default function Sidebar({ open, onNavigate }) {
     <aside id="ibrSidebar" data-open={open ? 'true' : undefined}>
       {/* Topo — marca */}
       <div className="sidebar-brand">
-        <div className="brand-mark">
-          <i className="ti ti-cross" aria-hidden="true" />
-        </div>
+        <img src="/favicon.svg" alt="IBR Maragogi" className="brand-logo" />
         <div id="ibrBrandText" className="brand-text">
           <span className="brand-name">IBR Maragogi</span>
           <span className="brand-sub">Igreja Batista Reformada</span>
